@@ -1,0 +1,19 @@
+// 전체 글자 약간 크게 (가독성 개선)
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+// 코드 블록 배경 다크톤
+.highlight {
+  border-radius: 8px;
+  padding: 1rem;
+  background: #1e1e1e !important;
+}
+
+// 프로젝트 카드 스타일
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+}
