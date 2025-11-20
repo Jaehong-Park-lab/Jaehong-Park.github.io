@@ -1,40 +1,169 @@
-// 전체 글자 약간 크게 (가독성 개선)
+/* ================================
+   Global Dark Mode
+================================ */
+:root {
+  --bg-dark: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --bg-highlight: #1e1e1e;
+  --text-light: #eaeaea;
+  --text-muted: #888;
+  --accent: #4fc3f7; /* 네온 블루 */
+  --accent-hover: #81d4fa;
+}
+
+/* 전체 배경 + 글자 스타일 */
 body {
+  background: var(--bg-dark) !important;
+  color: var(--text-light) !important;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-// 코드 블록 배경 다크톤
-.highlight {
-  border-radius: 8px;
-  padding: 1rem;
-  background: #1e1e1e !important;
+/* 링크 스타일 */
+a {
+  color: var(--accent);
+  font-weight: 600;
 }
 
-// 프로젝트 카드 스타일
-.project-card {
-  background: #222;
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* ================================
+   Header / Navigation
+================================ */
+.masthead {
+  background: #0f0f0f !important;
+  border-bottom: 1px solid #222;
+}
+
+.masthead__menu {
+  font-size: 17px;
+}
+
+.site-title, .site-title a {
+  color: var(--accent) !important;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+/* ================================
+   Sidebar (Author)
+================================ */
+.sidebar {
+  background: #111;
+  border-radius: 16px;
   padding: 20px;
-  border-radius: 12px;
+  color: var(--text-light);
 }
 
+.author__bio {
+  color: var(--text-muted);
+}
+
+/* ================================
+   Posts
+================================ */
+
+/* 포스트 카드 */
+.archive__item {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 14px;
+  transition: 0.25s;
+  border: 1px solid #222;
+}
+
+.archive__item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+/* 포스트 제목 */
+h1, h2, h3, h4 {
+  color: var(--accent-hover);
+  font-weight: 700;
+}
+
+/* 코드 블록 */
+.highlight {
+  background: var(--bg-highlight) !important;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 16px;
+  border: 1px solid #222;
+}
+
+/* inline code */
+code {
+  background: #222 !important;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* ================================
+   Project Section
+================================ */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  margin-top: 30px;
 }
 
 .project-card {
-  background: #222;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(79,195,247,0.4);
+}
+
+.project-card h3 {
+  color: var(--accent-hover);
+  margin-bottom: 10px;
 }
 
 .badge {
-  background: #444;
-  padding: 3px 8px;
+  background: #333;
+  padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
-  margin-right: 5px;
+  margin-right: 6px;
+  display: inline-block;
+  color: var(--text-light);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--accent);
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #000 !important;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+}
+
+/* ================================
+   Footer
+================================ */
+.site-footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+  color: var(--text-muted);
 }
