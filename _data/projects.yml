@@ -1,0 +1,9 @@
+- name: Spring REST API Server
+  description: JWT 기반 인증과 JPA를 활용한 REST API 서버
+  tech: ["Java", "Spring Boot", "JPA", "MySQL"]
+  link: "https://github.com/Jaehong-Park-lab"
+
+- name: Redis Cache Layer
+  description: Redis 기반 캐시 계층을 구축하여 성능 최적화
+  tech: ["Redis", "Spring Cache", "Docker"]
+  link: "https://github.com/Jaehong-Park-lab"
