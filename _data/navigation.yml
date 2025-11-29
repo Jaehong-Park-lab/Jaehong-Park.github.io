@@ -1,12 +1,11 @@
+# main 메뉴 (상단 네비게이션)에 추가
 main:
-  - title: "Home"
-    url: /
+  - title: "Java"
+    url: /categories/java/ # 1단계에서 설정한 permalink와 일치
   - title: "About"
     url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Posts"
-    url: /posts/
+
+# sidebar 메뉴에 추가하고 싶다면, 해당 메뉴 항목을 수정합니다.
 
     # 예시: _config.yml 파일 또는 _data/navigation.yml 파일
 navbar_items:
