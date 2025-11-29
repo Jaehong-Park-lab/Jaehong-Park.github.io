@@ -7,3 +7,10 @@ main:
     url: /projects/
   - title: "Posts"
     url: /posts/
+
+    # 예시: _config.yml 파일 또는 _data/navigation.yml 파일
+navbar_items:
+  - title: Java
+    url: /categories/java/ # Jekyll이 자동 생성하는 카테고리 URL 경로
+  - title: All Posts
+    url: /archives/
